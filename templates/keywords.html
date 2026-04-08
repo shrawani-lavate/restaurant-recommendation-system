@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="results-container">
+    <div class="results-header">
+        Here is Recommended Restaurants
+    </div>
+
+    {% if table %}
+    <div style="margin-top: 1rem;">
+        {{ table | safe }}
+    </div>
+    {% else %}
+    <p>No recommendations found for "{{ name }}".</p>
+    {% endif %}
+    
+    <div style="margin-top: 2rem;">
+        <a href="/extractor" class="btn">Try Another</a>
+    </div>
+</div>
+{% endblock %}

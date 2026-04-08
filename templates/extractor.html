@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="extractor-container">
+    <form action="/keywords" method="POST">
+        <div class="form-group">
+            <label for="restaurant_name">Restaurant Name</label>
+            <select name="restaurant_name" id="restaurant_name" required>
+                <option value="" disabled selected>Search or select a name...</option>
+                {% for name in restaurants %}
+                <option value="{{ name }}">{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn">Click to see the recommendation</button>
+    </form>
+</div>
+{% endblock %}

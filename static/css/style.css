@@ -1,0 +1,171 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e; /* Dark navy/black as in screenshot */
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background-color: #33334d;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Home Page Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-image {
+    flex: 1;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a1a2e;
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.test-system {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Buttons */
+.btn {
+    background-color: #111d2b; /* Dark button from screenshot */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #1a2a3a;
+}
+
+/* Extractor Page */
+.extractor-container {
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"], select {
+    width: 60%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f0f4ff; /* Light blueish tint as in screenshot */
+}
+
+/* Results Page Table */
+.results-header {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+}
+
+.recommend-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.recommend-table th, .recommend-table td {
+    border: 1px solid #333;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.recommend-table tr td:first-child {
+    font-weight: normal;
+    color: inherit;
+}
+
+/* Animation Dummy */
+.animate {
+    animation: none;
+}
